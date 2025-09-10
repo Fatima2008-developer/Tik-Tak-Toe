@@ -1,0 +1,50 @@
+﻿<Window x:Class="Tik_Tak_Toe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tik_Tak_Toe"
+        mc:Ignorable="d"
+        Title="Tik-Tac-Toe" Height="450" Width="800">
+    <DockPanel LastChildFill="True" Margin="10" Background="{DynamicResource BackGround}">
+        <TextBlock Text="Tik-Tac-Toe" FontSize="40" FontWeight="Bold" Style="{DynamicResource textblock1}" Width="255"
+                   HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10"/>
+        <TextBlock x:Name="lblScore" FontSize="16" HorizontalAlignment="Center" Style="{DynamicResource textblock}"   DockPanel.Dock="Top" Margin="0,0,0,10" Text="x Wins: 0 o Wins: 0 Ties: 0"/>
+        <TextBlock x:Name="lblTurn" FontSize="16" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Style="{DynamicResource textblock}"   Margin="0,10,0,0" Text="Current Turn: x"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Buttons for 9 cells -->
+            <Button x:Name="Btn00" Grid.Row="0" Grid.Column="0" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+            <Button x:Name="Btn01" Grid.Row="0" Grid.Column="1" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+            <Button x:Name="Btn02" Grid.Row="0" Grid.Column="2" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+
+            <Button x:Name="Btn10" Grid.Row="1" Grid.Column="0" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+            <Button x:Name="Btn11" Grid.Row="1" Grid.Column="1" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+            <Button x:Name="Btn12" Grid.Row="1" Grid.Column="2" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+
+            <Button x:Name="Btn20" Grid.Row="2" Grid.Column="0" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+            <Button x:Name="Btn21" Grid.Row="2" Grid.Column="1" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+            <Button x:Name="Btn22" Grid.Row="2" Grid.Column="2" FontSize="36" Click="Btn01_Click" Style="{DynamicResource mybutton}"/>
+
+            <CheckBox x:Name="themetoggle" Content="L/D" Margin="60,-190,20,50" IsChecked="False"
+                      Checked="themetoggle_Checked" Height="40"
+                      Style="{DynamicResource Tbc}" FontSize="13"
+             Width="110" 
+            Unchecked="themetoggle_Unchecked_1"/>
+
+
+        </Grid>
+    </DockPanel>
+</Window>
