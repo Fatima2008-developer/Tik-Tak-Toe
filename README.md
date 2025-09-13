@@ -36,8 +36,8 @@ This project is designed to:
  Serve as a fun and interactive project for a beginner-to-intermediate developer’s portfolio
 
 [Game Board](Screenshot(1).png)  
-[Winner Detected](Screenshort(4).png)
-[Theme Changing](Screenshort(5).png)  
+[Winner Detected](Screenshort (4).png)
+[Theme Changing](Screenshort (5).png)  
 
 
 
